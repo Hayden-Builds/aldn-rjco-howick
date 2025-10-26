@@ -1,0 +1,132 @@
+{
+  "page": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive Accounting, Bookkeeping & Advisory Solutions"
+  },
+  "intro": {
+    "title": "Expert Accounting & Bookkeeping Services",
+    "text": "We offer a comprehensive range of accounting, bookkeeping, tax, and advisory services to individuals and businesses in Howick and the KZN Midlands. Our experienced team is dedicated to providing you with expert financial services and guidance."
+  },
+  "services": [
+    {
+      "category": "Accounting Services",
+      "icon": "notes.svg",
+      "title": "Accounting Officer",
+      "description": "Professional accounting services including annual financial statements, compilations, independent reviews, and audits.",
+      "details": [
+        "Preparation of Annual Financial Statements",
+        "Compilations",
+        "Independent Review",
+        "Audits (in association with Baker Tilly JHB Inc.)",
+        "IT14SD",
+        "Monthly Management Accounts"
+      ]
+    },
+    {
+      "category": "Bookkeeping",
+      "icon": "notes.svg",
+      "title": "Bookkeeping Services",
+      "description": "Comprehensive monthly accounting and bookkeeping functions to keep your finances organized and up-to-date.",
+      "details": [
+        "Monthly accounting and bookkeeping functions",
+        "Reconciliations",
+        "Debtors management",
+        "Creditors management",
+        "Banking reconciliations",
+        "Monthly Management Accounts"
+      ]
+    },
+    {
+      "category": "Tax Services",
+      "icon": "notes.svg",
+      "title": "Income Tax",
+      "description": "Expert tax services for companies, trusts, individuals, and sole proprietors. We ensure compliance and optimize your tax position.",
+      "details": [
+        "Income tax returns for companies, trusts, and individuals",
+        "Provisional tax returns",
+        "Dividends withholding tax",
+        "Capital Gains tax",
+        "Tax planning and optimization",
+        "Tax compliance"
+      ]
+    },
+    {
+      "category": "Statutory Returns",
+      "icon": "notes.svg",
+      "title": "Statutory Returns",
+      "description": "Complete management of all statutory returns and compliance requirements for your business.",
+      "details": [
+        "EMP201 - Monthly PAYE returns",
+        "EMP501 - Annual reconciliations (SARS)",
+        "VAT201 - VAT returns",
+        "Workman's Compensation",
+        "UIF returns (Department of Labour)",
+        "Annual statutory submissions"
+      ]
+    },
+    {
+      "category": "Registrations",
+      "icon": "notes.svg",
+      "title": "Statutory Registrations",
+      "description": "Assist with all necessary statutory registrations to ensure your business is compliant from the start.",
+      "details": [
+        "PAYE/UIF registrations",
+        "Department of Labour for UIF and WCA",
+        "VAT registration",
+        "Trust registrations",
+        "Company registrations",
+        "Business compliance setup"
+      ]
+    },
+    {
+      "category": "Payroll",
+      "icon": "notes.svg",
+      "title": "Payroll",
+      "description": "Comprehensive payroll management including weekly, bi-weekly, and monthly processing with detailed reporting.",
+      "details": [
+        "Employee Payslips - Weekly, bi-weekly, monthly",
+        "Leave Pay Administration",
+        "Payroll Reports - Total earnings, deductions & contributions",
+        "Variance reports",
+        "Leave reports",
+        "Third party payment reports"
+      ]
+    },
+    {
+      "category": "Secretarial",
+      "icon": "notes.svg",
+      "title": "Secretarial Services",
+      "description": "Complete secretarial services for companies including CIPC returns, registrations, and ongoing compliance.",
+      "details": [
+        "Company Registrations",
+        "Annual CIPC returns",
+        "Beneficial Ownership submissions",
+        "Director Changes / Shareholder Changes",
+        "Company updates (contact, address etc.)",
+        "Ongoing secretarial support"
+      ]
+    },
+    {
+      "category": "Consulting",
+      "icon": "notes.svg",
+      "title": "Consulting & Advisory",
+      "description": "Strategic business consulting including internal audits, budgeting, cash flow management, and business planning.",
+      "details": [
+        "Internal auditing",
+        "Budgeting and business plans",
+        "Buy/Sell agreements",
+        "Shareholder agreements",
+        "Cash flow management",
+        "Business advisory services"
+      ]
+    }
+  ],
+  "callToAction": {
+    "title": "Need Accounting or Bookkeeping Assistance?",
+    "text": "Contact us today to discuss your accounting, bookkeeping, or advisory needs and discover how we can help your business succeed.",
+    "button": {
+      "title": "Schedule a Consultation",
+      "path": "/contact"
+    }
+  }
+}

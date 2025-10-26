@@ -4,6 +4,12 @@ import { MenuOutlined } from "@ant-design/icons";
 
 export const HeaderSection = styled("header")`
   padding: 1rem 0.5rem;
+  background-color: #fff;
+  border-bottom: 2px solid #e8e8e8;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 
   .ant-row-space-between {
     align-items: center;
@@ -88,8 +94,8 @@ export const Span = styled("span")`
   &:hover,
   &:active,
   &:focus {
-    color: rgb(255, 130, 92);
+    color: rgb(76, 175, 80);
     text-underline-position: under;
-    text-decoration: rgb(255, 130, 92) underline;
+    text-decoration: rgb(76, 175, 80) underline;
   }
 `;

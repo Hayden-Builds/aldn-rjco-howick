@@ -1,4 +1,55 @@
 {
-    "title": "Contact form",
-    "text": "The following form demonstrates form validation in action. Contact form component reduces the amount of time it is being re-rendered by the user as it embraces uncontrolled form validation to reduce any unnecessary performance penalty."
+  "page": {
+    "title": "Contact Us",
+    "subtitle": "Get in Touch with RJCO Howick"
+  },
+  "intro": {
+    "text": "We're here to help with all your accounting, bookkeeping, tax, and advisory needs. Reach out to us through any of the following methods, or fill out the contact form below and we'll get back to you promptly."
+  },
+  "contactInfo": {
+    "office": {
+      "title": "Office Address",
+      "address": "95 Main Street",
+      "city": "Howick, KwaZulu-Natal",
+      "postalCode": "3290",
+      "country": "South Africa",
+      "locationNote": "On corner of Andrew and Main Streets"
+    },
+    "contact": {
+      "phone": "033 330 6333",
+      "email": "howickinfo@rjcohowick.co.za"
+    },
+    "hours": {
+      "title": "Opening Hours",
+      "weekdays": "Mon - Fri",
+      "times": "8:00 am – 4:30 pm"
+    }
+  },
+  "form": {
+    "title": "Send Us a Message",
+    "text": "Fill out the form below and we'll respond as soon as possible.",
+    "fields": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "phone": "Your Phone (Optional)",
+      "subject": "Subject",
+      "message": "Your Message"
+    },
+    "button": "Send Message"
+  },
+  "social": {
+    "title": "Follow Us",
+    "links": [
+      {
+        "name": "Facebook",
+        "icon": "facebook.svg",
+        "url": "https://www.facebook.com/RJCOHowick/"
+      }
+    ]
+  },
+  "map": {
+    "title": "Find Us",
+    "text": "Visit our office located at 95 Main Street, Howick (on corner of Andrew and Main Streets)",
+    "googleMapsUrl": "https://www.google.com/maps/place/95+Main+St,+Howick,+3290"
+  }
 }

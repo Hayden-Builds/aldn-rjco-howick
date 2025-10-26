@@ -1,0 +1,57 @@
+{
+  "company": {
+    "name": "RJCO Howick",
+    "tagline": "Your Trusted Accounting & Bookkeeping Partner"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Have a question? Feel free to reach out.",
+    "address": "95 Main Street, Howick, 3290",
+    "phone": "+27 (33) 330 6333",
+    "email": "howickinfo@rjcohowick.co.za"
+  },
+  "quickLinks": {
+    "title": "Quick Links",
+    "links": [
+      {
+        "name": "Home",
+        "path": "/"
+      },
+      {
+        "name": "About Us",
+        "path": "/about"
+      },
+      {
+        "name": "Services",
+        "path": "/services"
+      },
+      {
+        "name": "Contact",
+        "path": "/contact"
+      }
+    ]
+  },
+  "services": {
+    "title": "Services",
+    "items": [
+      "Accounting & Auditing",
+      "Bookkeeping",
+      "Tax Services",
+      "Payroll & UIF",
+      "Statutory Returns",
+      "Consulting"
+    ]
+  },
+  "social": {
+    "title": "Follow Us",
+    "links": [
+      {
+        "name": "Facebook",
+        "icon": "facebook.svg",
+        "url": "https://www.facebook.com/RJCOHowick/"
+      }
+    ]
+  },
+  "copyright": "RJCO Howick Pty Ltd. All rights reserved."
+}
+

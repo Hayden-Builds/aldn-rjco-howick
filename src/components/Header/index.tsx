@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Row, Col, Drawer } from "antd";
 import { withTranslation, TFunction } from "react-i18next";
+import { Link } from "react-router-dom";
 import Container from "../../common/Container";
 import { SvgIcon } from "../../common/SvgIcon";
 import { Button } from "../../common/Button";
@@ -23,33 +24,47 @@ const Header = ({ t }: { t: TFunction }) => {
     setVisibility(!visible);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const MenuItem = () => {
-    const scrollTo = (id: string) => {
-      const element = document.getElementById(id) as HTMLDivElement;
-      element.scrollIntoView({
-        behavior: "smooth",
-      });
-      setVisibility(false);
-    };
     return (
       <>
-        <CustomNavLinkSmall onClick={() => scrollTo("about")}>
-          <Span>{t("About")}</Span>
-        </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("mission")}>
-          <Span>{t("Mission")}</Span>
-        </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("product")}>
-          <Span>{t("Product")}</Span>
-        </CustomNavLinkSmall>
-        <CustomNavLinkSmall
-          style={{ width: "180px" }}
-          onClick={() => scrollTo("contact")}
+        <Link to="/" onClick={() => { setVisibility(false); scrollToTop(); }}>
+          <CustomNavLinkSmall>
+            <Span>{t("Home")}</Span>
+          </CustomNavLinkSmall>
+        </Link>
+        <Link to="/about" onClick={() => { setVisibility(false); scrollToTop(); }}>
+          <CustomNavLinkSmall>
+            <Span>{t("About")}</Span>
+          </CustomNavLinkSmall>
+        </Link>
+        <Link to="/services" onClick={() => { setVisibility(false); scrollToTop(); }}>
+          <CustomNavLinkSmall>
+            <Span>{t("Services")}</Span>
+          </CustomNavLinkSmall>
+        </Link>
+        <Link to="/contact" onClick={() => { setVisibility(false); scrollToTop(); }}>
+          <CustomNavLinkSmall>
+            <Span>
+              <Button>{t("Contact")}</Button>
+            </Span>
+          </CustomNavLinkSmall>
+        </Link>
+        <a 
+          href="https://www.facebook.com/RJCOHowick/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          aria-label="Facebook"
+          onClick={() => setVisibility(false)}
+          style={{ display: "inline-block", margin: "0.5rem 2rem" }}
         >
           <Span>
-            <Button>{t("Contact")}</Button>
+            <SvgIcon src="facebook.svg" width="24px" height="24px" />
           </Span>
-        </CustomNavLinkSmall>
+        </a>
       </>
     );
   };
@@ -58,8 +73,8 @@ const Header = ({ t }: { t: TFunction }) => {
     <HeaderSection>
       <Container>
         <Row justify="space-between">
-          <LogoContainer to="/" aria-label="homepage">
-            <SvgIcon src="logo.svg" width="101px" height="64px" />
+          <LogoContainer to="/" aria-label="homepage" onClick={scrollToTop}>
+            <img src="/img/photos/RJCO Logo2.avif" alt="RJCO Howick" style={{ maxHeight: "64px", width: "auto" }} />
           </LogoContainer>
           <NotHidden>
             <MenuItem />
