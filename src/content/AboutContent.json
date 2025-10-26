@@ -1,16 +1,100 @@
 {
-  "title": "Light, fast & responsive",
-  "text": "This template is ready to use, so you don't need to change anything at a component level, unless you want to customize the default styling.",
-  "section": [
-    {
-      "title": "Why Antd?",
-      "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.",
-      "icon": "notes.svg"
-    },
-    {
-      "title": "Why styled-components?",
-      "content": "Styled Components gives you total control over your components.",
-      "icon": "notes.svg"
+  "page": {
+    "title": "About Us",
+    "subtitle": "Your Trusted Accounting & Bookkeeping Partner in Howick"
+  },
+  "history": {
+    "title": "Our History",
+    "text": "In 2008 a branch of Russell James and Company Inc. was established in Howick to provide Bookkeeping, Accounting, Tax, Payroll and Advisory offerings to clients in the KZN Midlands. Our first offices were housed in the Old Howick Falls Hotel until 2016 when we moved into our own premises at 95 Main Street. Through changes brought on by expansion and growth; Russell James and Company changed its name to Baker Tilly JHB Inc. and then to RJCO Howick as it is known now. In 2020 BSH (Bookkeeping Services Howick Pty Ltd) moved into the RJCO offices. The symbiosis between the two companies became apparent, and we decided to join forces under a singular identity: RJCO Howick. This union embodies a perfect synergy and underscores our commitment to providing excellent services to the Howick community, Midlands and beyond. With our shared values of excellence and dedication to client satisfaction, this collaboration ensures a bigger range of accounting, bookkeeping and other solutions to cater to diverse needs.",
+    "image": "office front.avif"
+  },
+  "values": {
+    "title": "Our Values",
+    "values": [
+      {
+        "title": "Excellence",
+        "description": "We strive for excellence in everything we do, delivering the highest quality accounting, bookkeeping, and advisory services."
+      },
+      {
+        "title": "Client Dedication",
+        "description": "Your success is our success. We put our clients first and work tirelessly to ensure their financial needs are met."
+      },
+      {
+        "title": "Integrity",
+        "description": "We conduct our practice with the highest ethical standards and honesty in all our dealings."
+      },
+      {
+        "title": "Community Focus",
+        "description": "We are committed to serving the Howick community, Midlands and beyond with dedication and professionalism."
+      }
+    ]
+  },
+  "team": {
+    "title": "Our Team",
+    "text": "Meet the experienced professionals who make our firm exceptional.",
+    "members": [
+      {
+        "name": "Terence James",
+        "role": "Branch Manager",
+        "bio": "Leading our team with extensive experience in accounting and business advisory services.",
+        "image": "Terence James.png"
+      },
+      {
+        "name": "Alymega Mandima",
+        "role": "Manager - SME",
+        "bio": "Specializing in small and medium enterprise services with expertise in business advisory.",
+        "image": "Alymega Mandima.avif"
+      },
+      {
+        "name": "Bronwen James",
+        "role": "Manager - Bookkeeping",
+        "bio": "Overseeing our bookkeeping operations with years of experience and dedication to client satisfaction.",
+        "image": "Bronwen James.avif"
+      },
+      {
+        "name": "Gugu Mshengu",
+        "role": "Bookkeeping / UIF / WCA",
+        "bio": "Expert in bookkeeping, UIF, and Workman's Compensation matters with meticulous attention to detail.",
+        "image": "Gugu Mshengu.avif"
+      },
+      {
+        "name": "Nokukhanya Zulu",
+        "role": "Bookkeeping / SME",
+        "bio": "Providing comprehensive bookkeeping and SME services with dedication and professionalism.",
+        "image": "NOKUKHANYA ZULU.avif"
+      },
+      {
+        "name": "Fawn Van Lingen",
+        "role": "Bookkeeping",
+        "bio": "Delivering expert bookkeeping services with precision and care for our clients.",
+        "image": "FAWN VAN LINGEN.avif"
+      },
+      {
+        "name": "Sharon Trower",
+        "role": "Bookkeeping",
+        "bio": "Providing reliable and accurate bookkeeping services with a focus on client satisfaction.",
+        "image": "Sharon Trower.avif"
+      },
+      {
+        "name": "Tanya Wilby",
+        "role": "Bookkeeping",
+        "bio": "Expert bookkeeper ensuring all financial records are maintained accurately and efficiently.",
+        "image": "Tanya Wilby.avif"
+      },
+      {
+        "name": "Belinda Jonker",
+        "role": "Admin / Bookkeeping",
+        "bio": "Managing administrative functions and providing bookkeeping support to keep operations running smoothly.",
+        "image": "Belinda Jonker.avif"
+      }
+    ]
+  },
+  "callToAction": {
+    "title": "Let's Work Together",
+    "text": "Contact us today to learn more about how we can help you with your accounting and bookkeeping needs.",
+    "button": {
+      "title": "Get in Touch",
+      "path": "/contact"
     }
-  ]
+  }
 }

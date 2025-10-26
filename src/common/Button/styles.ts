@@ -8,7 +8,7 @@ export const StyledButton = styled("button")<{ color?: string }>`
   width: 100%;
   border: 1px solid #edf3f5;
   border-radius: 4px;
-  padding: 13px 0;
+  padding: 8px 16px;
   cursor: pointer;
   margin-top: 0.625rem;
   max-width: 180px;
@@ -19,7 +19,7 @@ export const StyledButton = styled("button")<{ color?: string }>`
   &:active,
   &:focus {
     color: #fff;
-    border: 1px solid rgb(255, 130, 92);
-    background-color: rgb(255, 130, 92);
+    border: 1px solid rgb(76, 175, 80);
+    background-color: rgb(76, 175, 80);
   }
 `;

@@ -1,0 +1,79 @@
+{
+  "hero": {
+    "title": "Welcome to RJCO Howick",
+    "subtitle": "Your Trusted Accounting & Bookkeeping Partner",
+    "description": "We provide comprehensive accounting, bookkeeping, tax, payroll, and advisory services to individuals and businesses in Howick and the KZN Midlands.",
+    "buttons": [
+      {
+        "title": "Our Services",
+        "path": "/services"
+      },
+      {
+        "title": "Contact Us",
+        "path": "/contact"
+      }
+    ]
+  },
+  "intro": {
+    "title": "Excellence in Accounting & Bookkeeping",
+    "text": "With years of experience and a commitment to excellence, we serve our clients with dedication and professionalism. Our team of experienced accountants and bookkeepers is here to provide you with expert financial guidance.",
+    "features": [
+      {
+        "title": "Professional Accounting Services",
+        "description": "Expert accountants with deep knowledge in financial statements, compilations, and audits",
+        "icon": "notes.svg"
+      },
+      {
+        "title": "Client-Focused Bookkeeping",
+        "description": "Monthly bookkeeping and reconciliation services tailored to your business needs",
+        "icon": "notes.svg"
+      },
+      {
+        "title": "Comprehensive Tax Services",
+        "description": "We ensure compliance and optimize your tax position with expert tax planning",
+        "icon": "notes.svg"
+      }
+    ]
+  },
+  "mission": {
+    "title": "OUR STORY",
+    "text": "From inception, RJCO Howick Pty Ltd has sought to cater to a niche in the market with a focus on family owned enterprises and Small to Medium businesses. This vision remains - to supply an all-encompassing basket of services to these business people. Our client family is diversified in both business types and sizes. Whether you are running a start-up or a company that has been operating for decades, our team is here to help you make the best financial decisions.",
+    "services": "We offer the full range of bookkeeping; accounting; consulting and tax services: Monthly Accounting and Bookkeeping on-site and online • Payroll for any size business • Statutory returns, EMP201's; EMP501's; VAT201's • COiDA/WCA registrations and filing of Annual Return of Earnings • Tax Consulting, submission of provisional and annual tax returns for individuals and companies • Preparing of annual financial statements on an Independent Review and Compilation basis • Advisory and Consulting • Internal auditing when requested • Company and Trust registrations • Annual CIPC Company registration renewals • and more..",
+    "image": "office.avif"
+  },
+  "servicesPreview": {
+    "title": "Our Services",
+    "text": "We offer a wide range of accounting and bookkeeping services to meet your needs",
+    "services": [
+      {
+        "title": "Accounting & Auditing",
+        "description": "Annual financial statements, compilations, independent reviews, and audits"
+      },
+      {
+        "title": "Bookkeeping",
+        "description": "Monthly accounting, reconciliations, debtors, creditors, and management accounts"
+      },
+      {
+        "title": "Tax Services",
+        "description": "Income tax, provisional tax, dividends withholding tax, and capital gains tax"
+      },
+      {
+        "title": "Payroll & Statutory",
+        "description": "Payroll processing, UIF, WCA, PAYE, VAT returns, and statutory compliance"
+      }
+    ],
+    "button": {
+      "title": "View All Services",
+      "path": "/services"
+    }
+  },
+  "callToAction": {
+    "title": "Ready to Get Started?",
+    "text": "Contact us today for a consultation and let us help you with your accounting and bookkeeping needs.",
+    "button": {
+      "title": "Schedule Consultation",
+      "path": "/contact"
+    }
+  }
+}
+
