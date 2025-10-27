@@ -21,17 +21,17 @@
       {
         "title": "Professional Accounting Services",
         "description": "Expert accountants with deep knowledge in financial statements, compilations, and audits",
-        "icon": "notes.svg"
+        "icon": "spreadsheets.svg"
       },
       {
         "title": "Client-Focused Bookkeeping",
         "description": "Monthly bookkeeping and reconciliation services tailored to your business needs",
-        "icon": "notes.svg"
+        "icon": "nice_to_meet_you.svg"
       },
       {
         "title": "Comprehensive Tax Services",
         "description": "We ensure compliance and optimize your tax position with expert tax planning",
-        "icon": "notes.svg"
+        "icon": "personal_finance.svg"
       }
     ]
   },

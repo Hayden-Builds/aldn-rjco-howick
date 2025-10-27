@@ -27,7 +27,7 @@ const Services = ({ t }: { t: TFunction }) => {
 
   return (
     <div>
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       
       {/* Hero Header */}
       <div style={{

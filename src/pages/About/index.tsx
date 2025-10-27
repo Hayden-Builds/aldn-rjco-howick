@@ -85,7 +85,7 @@ const About = ({ t }: { t: TFunction }) => {
 
   return (
     <div>
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       
       {/* Hero Header */}
       <div style={{
@@ -141,7 +141,7 @@ const About = ({ t }: { t: TFunction }) => {
             </Col>
             
             {/* Full width large image */}
-            <Col lg={20} md={20} sm={24} xs={24}>
+            {/* <Col lg={20} md={20} sm={24} xs={24}>
               <Fade triggerOnce>
                 <div style={{
                   width: "100%",
@@ -162,7 +162,7 @@ const About = ({ t }: { t: TFunction }) => {
                   />
                 </div>
               </Fade>
-            </Col>
+            </Col> */}
             
             {/* Text in centered column */}
             <Col lg={16} md={16} sm={24} xs={24}>

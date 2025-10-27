@@ -30,7 +30,7 @@ const Contact = ({ t }: { t: TFunction }) => {
 
   return (
     <div style={{ overflow: "hidden" }}>
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       
       {/* Hero Header */}
       <div style={{
@@ -184,7 +184,7 @@ const Contact = ({ t }: { t: TFunction }) => {
                           boxShadow: "0 10px 40px rgba(0,0,0,0.2)",
                           transition: "all 0.3s ease",
                           cursor: "pointer",
-                          width: "auto"
+                          width: "auto",
                         }}
                         onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => {
                           e.currentTarget.style.transform = "translateY(-3px) scale(1.05)";

@@ -93,7 +93,7 @@ const Footer = ({ t }: { t: TFunction }) => {
           >
             <Col span={12} style={{ textAlign: "center" }}>
               <Para style={{ textAlign: "center", margin: "0 auto" }}>
-                © 2024 {FooterContent.company.name}
+                © 2025 {FooterContent.company.name}
               </Para>
             </Col>
             <Col span={12} style={{ textAlign: "center" }}>

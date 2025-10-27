@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import { notification } from "antd";
 
 interface IValues {
@@ -22,50 +23,43 @@ export const useForm = (validate: { (values: IValues): IValues }) => {
     errors: { ...initialValues },
   });
 
-  const handleSubmit = async (event: React.ChangeEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const values = formState.values;
-    const errors = validate(values);
-    setFormState((prevState) => ({ ...prevState, errors }));
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  event.preventDefault();
+  const values = formState.values;
+  const errors = validate(values);
+  setFormState((prevState) => ({ ...prevState, errors }));
 
-    const url = ""; // Fill in your API URL here
+  try {
+    // Only proceed if no validation errors
+    if (Object.values(errors).every((error) => error === "")) {
+      const serviceID = "service_f3irfcn";
+      const templateID = "template_z3ps1r5"; // e.g., 'template_xxx'
+      const publicKey = "lXgTr_HiZMAF0QPmD"; // e.g., 'user_xxx'
 
-    try {
-      if (Object.values(errors).every((error) => error === "")) {
-        const response = await fetch(url, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(values),
-        });
+      // Send email using EmailJS
+      await emailjs.send(serviceID, templateID, values as unknown as Record<string, unknown>, publicKey);
 
-        if (!response.ok) {
-          notification["error"]({
-            message: "Error",
-            description:
-              "There was an error sending your message, please try again later.",
-          });
-        } else {
-          event.target.reset();
-          setFormState(() => ({
-            values: { ...initialValues },
-            errors: { ...initialValues },
-          }));
+      // Reset form
+      (event.target as HTMLFormElement).reset();
+      setFormState(() => ({
+        values: { ...initialValues },
+        errors: { ...initialValues },
+      }));
 
-          notification["success"]({
-            message: "Success",
-            description: "Your message has been sent!",
-          });
-        }
-      }
-    } catch (error) {
-      notification["error"]({
-        message: "Error",
-        description: "Failed to submit form. Please try again later.",
+      notification.success({
+        message: "Success",
+        description: "Your message has been sent!",
       });
     }
-  };
+  } catch (error) {
+    console.error("EmailJS Error:", error);
+    notification.error({
+      message: "Error",
+      description:
+        "There was an error sending your message, please try again later.",
+    });
+  }
+};
 
   const handleChange = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>

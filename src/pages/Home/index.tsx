@@ -17,92 +17,179 @@ const Home = ({ t }: { t: TFunction }) => {
 
   return (
     <div style={{ overflow: "hidden" }}>
-      <ScrollToTop />
-      
-      {/* Hero Section - Modern Fullscreen */}
-      <div style={{ 
-        minHeight: "100vh",
-        backgroundImage: "url('/img/photos/office front.avif')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        position: "relative",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center"
-      }}>
-        <div style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          background: "rgba(0, 0, 0, 0.3)"
-        }}></div>
-        <Container>
-          <div style={{ position: "relative", zIndex: 1 }}>
+      {/* Hero Section - Video Background */}
+      <div
+        style={{
+          position: "relative",
+          minHeight: "100vh",
+          overflow: "hidden",
+        }}
+      >
+        {/* Background Video */}
+        <video
+          autoPlay
+          muted
+          playsInline
+          preload="auto"
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            zIndex: 0,
+            rotate: "180deg",
+            opacity: 30
+          }}
+        >
+          <source src="/img/videos/hero_bg.mp4" type="video/mp4" />
+        </video>
+
+        {/* Content Layer */}
+        <div style={{ position: "relative", zIndex: 3 }}>
+          <Container>
             <Fade triggerOnce>
-              <Row justify="center">
-                <Col lg={18} md={20} sm={24} xs={24} style={{ textAlign: "center", color: "#fff" }}>
-                <h1 style={{ 
-                  fontSize: "clamp(3rem, 6vw, 5rem)", 
-                  fontWeight: 800,
-                  marginBottom: "2rem",
-                  lineHeight: "1.2",
-                  letterSpacing: "-0.03em",
-                  color: "#fff"
-                }}>
-                  {HomeContent.hero.title}
-                </h1>
-                <p style={{ 
-                  fontSize: "clamp(1.3rem, 2.5vw, 1.8rem)", 
-                  marginBottom: "3rem",
-                  opacity: 0.95,
-                  fontWeight: 300,
-                  lineHeight: "1.6",
-                  maxWidth: "800px",
-                  margin: "0 auto 3rem",
-                  color: "#fff"
-                }}>
-                  {HomeContent.hero.description}
-                </p>
-                <div style={{ display: "flex", gap: "1.5rem", justifyContent: "center", flexWrap: "wrap" }}>
-                  {HomeContent.hero.buttons.map((btn: any, index: number) => (
-                    <button 
-                      key={index}
-                      onClick={() => history.push(btn.path)}
-                      style={{ 
+              <Row
+                justify="center"
+                style={{ minHeight: "100vh", alignItems: "center" }}
+              >
+                <Col
+                  lg={18}
+                  md={20}
+                  sm={24}
+                  xs={24}
+                  style={{ textAlign: "center", color: "#fff" }}
+                >
+                  <h1
+                    style={{
+                      fontSize: "clamp(3rem, 6vw, 5rem)",
+                      fontWeight: 800,
+                      marginBottom: "2rem",
+                      lineHeight: "1.2",
+                      letterSpacing: "-0.03em",
+                      color: "#fff",
+                    }}
+                  >
+                    {HomeContent.hero.title}
+                  </h1>
+                  <p
+                    style={{
+                      fontSize: "clamp(1.3rem, 2.5vw, 1.8rem)",
+                      marginBottom: "3rem",
+                      opacity: 0.95,
+                      fontWeight: 300,
+                      lineHeight: "1.6",
+                      maxWidth: "800px",
+                      margin: "0 auto 3rem",
+                      color: "#fff",
+                    }}
+                  >
+                    {HomeContent.hero.description}
+                  </p>
+
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "1.5rem",
+                      justifyContent: "center",
+                      flexWrap: "wrap",
+                    }}
+                  >
+                    <button
+                      onClick={() => {
+                        history.push("/contact");
+                        setTimeout(() => window.scrollTo(0, 0), 100);
+                      }}
+                      style={{
                         padding: "1.25rem 3rem",
                         fontSize: "1.1rem",
                         fontWeight: 600,
                         borderRadius: "50px",
-                        backgroundColor: "rgba(255, 255, 255, 0.15)",
-                        color: "#fff",
-                        border: "2px solid #fff",
-                        backdropFilter: "blur(10px)",
+                        backgroundColor: "#fff",
+                        color: "#667eea",
+                        border: "none",
+                        boxShadow: "0 8px 25px rgba(102, 126, 234, 0.3)",
                         transition: "all 0.3s ease",
-                        cursor: "pointer"
+                        cursor: "pointer",
                       }}
                       onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => {
                         e.currentTarget.style.transform = "translateY(-3px)";
-                        e.currentTarget.style.boxShadow = "0 10px 30px rgba(76, 175, 80, 0.4)";
-                        e.currentTarget.style.backgroundColor = "rgba(76, 175, 80, 0.3)";
+                        e.currentTarget.style.boxShadow =
+                          "0 12px 35px rgba(76, 175, 80, 0.4)";
+                        e.currentTarget.style.backgroundColor = "#4caf50";
+                        e.currentTarget.style.color = "#fff";
                       }}
                       onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => {
                         e.currentTarget.style.transform = "translateY(0)";
-                        e.currentTarget.style.boxShadow = "none";
-                        e.currentTarget.style.backgroundColor = "rgba(255, 255, 255, 0.15)";
+                        e.currentTarget.style.boxShadow =
+                          "0 8px 25px rgba(102, 126, 234, 0.3)";
+                        e.currentTarget.style.backgroundColor = "#fff";
+                        e.currentTarget.style.color = "#667eea";
                       }}
                     >
-                      {btn.title}
+                      {HomeContent.callToAction.button.title}
                     </button>
-                  ))}
-                </div>
-              </Col>
-            </Row>
-          </Fade>
-          </div>
-        </Container>
+
+                    <button
+                      onClick={() =>
+                        history.push(HomeContent.servicesPreview.button.path)
+                      }
+                      style={{
+                        padding: "1.25rem 3rem",
+                        fontSize: "1.1rem",
+                        fontWeight: 600,
+                        borderRadius: "50px",
+                        background:
+                          "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+                        color: "#fff",
+                        border: "none",
+                        boxShadow: "0 8px 25px rgba(102, 126, 234, 0.3)",
+                        transition: "all 0.3s ease",
+                        cursor: "pointer",
+                      }}
+                      onMouseEnter={(
+                        e: React.MouseEvent<HTMLButtonElement>
+                      ) => {
+                        e.currentTarget.style.transform = "translateY(-3px)";
+                        e.currentTarget.style.boxShadow =
+                          "0 12px 35px rgba(76, 175, 80, 0.4)";
+                        e.currentTarget.style.background =
+                          "linear-gradient(135deg, #4caf50 0%, #2e7d32 100%)";
+                      }}
+                      onMouseLeave={(
+                        e: React.MouseEvent<HTMLButtonElement>
+                      ) => {
+                        e.currentTarget.style.transform = "translateY(0)";
+                        e.currentTarget.style.boxShadow =
+                          "0 8px 25px rgba(102, 126, 234, 0.3)";
+                        e.currentTarget.style.background =
+                          "linear-gradient(135deg, #667eea 0%, #764ba2 100%)";
+                      }}
+                    >
+                      {HomeContent.servicesPreview.button.title}
+                    </button>
+                  </div>
+                </Col>
+              </Row>
+            </Fade>
+          </Container>
+
+          {/* Bottom Fade-Out Gradient */}
+          <div
+            style={{
+              position: "absolute",
+              bottom: 0,
+              left: 0,
+              right: 0,
+              height: "200px",
+              background:
+                "linear-gradient(to bottom, rgba(255,255,255,0) 0%, #fafbfc 100%)",
+              zIndex: 4,
+              pointerEvents: "none",
+            }}
+          ></div>
+        </div>
       </div>
 
       {/* Features Section - Glassmorphism Cards */}
@@ -199,15 +286,43 @@ const Home = ({ t }: { t: TFunction }) => {
           <Row gutter={[64, 48]} align="middle">
             <Col lg={12} md={12} sm={24} xs={24}>
               <Fade triggerOnce direction="left">
-                <img 
-                  src={`/img/photos/${HomeContent.mission.image}`}
-                  alt="Our Story"
-                  style={{ 
-                    width: "100%", 
-                    borderRadius: "24px",
-                    boxShadow: "0 20px 60px rgba(0,0,0,0.1)"
-                  }}
-                />
+                <div
+  style={{
+    position: "relative",
+    width: "100%",
+    borderRadius: "24px",
+    overflow: "hidden",
+    boxShadow: "0 20px 60px rgba(0,0,0,0.1)",
+  }}
+>
+  {/* Background Image */}
+  <img
+    src={`/img/photos/${HomeContent.mission.image}`}
+    alt="Our Story"
+    style={{
+      width: "100%",
+      height: "auto",
+      display: "block",
+      objectFit: "cover",
+      borderRadius: "24px",
+    }}
+  />
+
+  {/* Gradient Overlay (matches Hero) */}
+  <div
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      borderRadius: "24px",
+      background:
+        "linear-gradient(135deg, rgba(102, 126, 234, 0.55) 0%, rgba(118, 75, 162, 0.55) 50%, rgba(10, 51, 70, 0.55) 100%)",
+      mixBlendMode: "overlay",
+    }}
+  ></div>
+</div>
               </Fade>
             </Col>
             <Col lg={12} md={12} sm={24} xs={24}>
@@ -350,7 +465,8 @@ const Home = ({ t }: { t: TFunction }) => {
                   fontSize: "1.1rem", 
                   marginBottom: "1.5rem", 
                   opacity: 0.95,
-                  lineHeight: "1.6"
+                  lineHeight: "1.6",
+                  color: "#fff"
                 }}>
                   {HomeContent.callToAction.text}
                 </p>

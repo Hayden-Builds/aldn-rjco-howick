@@ -53,7 +53,7 @@ const Header = ({ t }: { t: TFunction }) => {
             </Span>
           </CustomNavLinkSmall>
         </Link>
-        <a 
+        {/* <a 
           href="https://www.facebook.com/RJCOHowick/" 
           target="_blank" 
           rel="noopener noreferrer"
@@ -64,7 +64,7 @@ const Header = ({ t }: { t: TFunction }) => {
           <Span>
             <SvgIcon src="facebook.svg" width="24px" height="24px" />
           </Span>
-        </a>
+        </a> */}
       </>
     );
   };
